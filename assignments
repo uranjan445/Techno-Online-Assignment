@@ -1,0 +1,29 @@
+#include <iostream>
+#include<string>
+
+using namespace std;
+
+int main()
+{
+    string s;
+    cin>>s;
+    int l = s.length(),c;
+    string n = "";
+    for(int i =0;i<l;i++){
+        if(s[i]!='/')
+            n=n+s[i];
+        else{
+            c=i;
+            break;
+        }}
+        string d="";
+        for (int j= c+1;j<l;j++)
+        {
+            d=d+s[j];
+        }
+        string r = d+"/"+n;
+        cout << "reciprocal = "<<r;
+
+    return 0;
+}
+
